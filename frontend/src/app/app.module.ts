@@ -13,7 +13,8 @@ import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatCardModule} from '@angular/material/card'
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
-import { ProductsCrudComponent } from './views/products-crud/products-crud.component'
+import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ProductsCrudComponent } from './views/products-crud/products-crud.compo
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductsCrudComponent
+    ProductsCrudComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
