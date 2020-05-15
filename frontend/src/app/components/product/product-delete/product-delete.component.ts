@@ -10,7 +10,7 @@ import { Product } from '../product.model';
 })
 export class ProductDeleteComponent implements OnInit {
 
-  product: Product
+  product: Product = { name: '', price: null }
 
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) { }
 
@@ -21,14 +21,14 @@ export class ProductDeleteComponent implements OnInit {
     })
   }
 
-  deleteProduct(): void{
-    this.productService.delete(this.product.id).subscribe(()=>{
+  deleteProduct(): void {
+    this.productService.delete(this.product.id).subscribe(() => {
       this.router.navigate(['/products']);
       this.productService.showMessage('Produto excluído com sucesso!')
     })
   }
-  
-  cancel():void{
+
+  cancel(): void {
     this.router.navigate(['/products'])
   }
 

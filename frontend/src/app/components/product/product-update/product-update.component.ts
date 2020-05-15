@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  product: Product;
+  product: Product = { name: '', price: null }
 
   constructor(private poroductService: ProductService, private router: Router, private route: ActivatedRoute) { }
 
