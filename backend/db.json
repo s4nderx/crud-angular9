@@ -29,6 +29,11 @@
       "name": "Lapis Preto",
       "price": "2.50",
       "id": 6
+    },
+    {
+      "name": "Angular9 Cod3r",
+      "price": "777",
+      "id": 7
     }
   ]
 }
